@@ -20,18 +20,27 @@ mcp-admin-env/
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
+*~
 
 # Logs
 *.log
+npm-debug.log*
 
-# Configuration files with secrets
-config/secrets.json
-*.env
+# Environment files
+.env
 .env.local
+config/secrets.json
+
+# Build files (if any)
+dist/
+build/
+*.min.js
+*.min.css
 
 # System files and directories
 AppData/

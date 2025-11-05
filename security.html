@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security &amp; Permissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <h2 class="logo">MCP&nbsp;Admin</h2>
+            <ul>
+                <li><a href="index.html">Servers</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="context.html">Context</a></li>
+                <li><a href="prompts.html">Prompts</a></li>
+                <li class="active"><a href="security.html">Security</a></li>
+                <li><a href="logs.html">Logs</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Security &amp; Permissions</h1>
+            <!-- Roles section -->
+            <div class="list-section">
+                <div class="section-header">
+                    <h2>Roles</h2>
+                    <a href="#" class="btn primary-btn">+ Add new role</a>
+                </div>
+                <div class="roles-grid">
+                    <div class="role-card">
+                        <div class="role-info">
+                            <div class="role-name">Administrator</div>
+                            <div class="role-desc">Full access to all servers, tools, and settings</div>
+                        </div>
+                        <div class="role-actions">
+                            <a href="#" class="btn small-btn edit-btn">Manage</a>
+                        </div>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-info">
+                            <div class="role-name">Editor</div>
+                            <div class="role-desc">Can modify tools and context, but not server settings</div>
+                        </div>
+                        <div class="role-actions">
+                            <a href="#" class="btn small-btn edit-btn">Manage</a>
+                        </div>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-info">
+                            <div class="role-name">Viewer</div>
+                            <div class="role-desc">Read-only access to view servers, tools, and logs</div>
+                        </div>
+                        <div class="role-actions">
+                            <a href="#" class="btn small-btn edit-btn">Manage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Users section -->
+            <div class="list-section">
+                <div class="section-header">
+                    <h2>Users</h2>
+                    <a href="#" class="btn primary-btn">+ Add new user</a>
+                </div>
+                <div class="users-grid">
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="user-name">Alice</div>
+                            <div class="user-role">Administrator</div>
+                        </div>
+                        <div class="user-actions">
+                            <a href="#" class="btn small-btn edit-btn">Edit</a>
+                            <button class="btn small-btn delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="user-name">Bob</div>
+                            <div class="user-role">Editor</div>
+                        </div>
+                        <div class="user-actions">
+                            <a href="#" class="btn small-btn edit-btn">Edit</a>
+                            <button class="btn small-btn delete-btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="user-name">Charlie</div>
+                            <div class="user-role">Viewer</div>
+                        </div>
+                        <div class="user-actions">
+                            <a href="#" class="btn small-btn edit-btn">Edit</a>
+                            <button class="btn small-btn delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

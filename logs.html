@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Logs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <h2 class="logo">MCP&nbsp;Admin</h2>
+            <ul>
+                <li><a href="index.html">Servers</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="context.html">Context</a></li>
+                <li><a href="prompts.html">Prompts</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li class="active"><a href="logs.html">Logs</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>System Logs</h1>
+            <div class="logs-controls">
+                <div class="control-group">
+                    <label for="severityFilter">Severity:</label>
+                    <select id="severityFilter">
+                        <option>All</option>
+                        <option>Info</option>
+                        <option>Warning</option>
+                        <option>Error</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="searchLogs">Search:</label>
+                    <input type="text" id="searchLogs" placeholder="Search logs..." />
+                </div>
+                <button class="btn delete-btn">Clear logs</button>
+            </div>
+            <div class="logs-list">
+                <div class="log-entry info">
+                    <div class="log-meta">
+                        <span class="log-date">2025-10-01</span>
+                        <span class="log-time">14:23</span>
+                        <span class="log-type">INFO</span>
+                    </div>
+                    <div class="log-message">Server&nbsp;1 started successfully.</div>
+                </div>
+                <div class="log-entry warn">
+                    <div class="log-meta">
+                        <span class="log-date">2025-10-02</span>
+                        <span class="log-time">09:12</span>
+                        <span class="log-type">WARNING</span>
+                    </div>
+                    <div class="log-message">Memory usage exceeded 80% threshold on Server&nbsp;2.</div>
+                </div>
+                <div class="log-entry error">
+                    <div class="log-meta">
+                        <span class="log-date">2025-10-03</span>
+                        <span class="log-time">21:45</span>
+                        <span class="log-type">ERROR</span>
+                    </div>
+                    <div class="log-message">Failed to connect to database for Tool&nbsp;C.</div>
+                </div>
+                <div class="log-entry info">
+                    <div class="log-meta">
+                        <span class="log-date">2025-10-04</span>
+                        <span class="log-time">08:30</span>
+                        <span class="log-type">INFO</span>
+                    </div>
+                    <div class="log-message">New prompt "Travel Planning Prompt" created.</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
