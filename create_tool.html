@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <h2 class="logo">MCP&nbsp;Admin</h2>
+            <ul>
+                <li><a href="index.html">Servers</a></li>
+                <li class="active"><a href="tools.html">Tools</a></li>
+                <li><a href="context.html">Context</a></li>
+                <li><a href="prompts.html">Prompts</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="logs.html">Logs</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Create Tool</h1>
+            <div class="steps">
+                <div class="step current">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Basic Info</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Input Fields</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Output Fields</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span class="step-label">Test &amp; Save</span>
+                </div>
+            </div>
+            <form class="wizard-form" action="#">
+                <div class="form-group">
+                    <label for="toolName">Tool Name</label>
+                    <input type="text" id="toolName" placeholder="Enter the tool name" />
+                </div>
+                <div class="form-group">
+                    <label for="toolDesc">Description</label>
+                    <textarea id="toolDesc" placeholder="Enter a description for the tool"></textarea>
+                </div>
+                <div class="form-actions">
+                    <a href="tools.html" class="btn cancel-btn">Cancel</a>
+                    <button type="button" class="btn primary-btn">Continue</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

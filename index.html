@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Administration Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <h2 class="logo">MCP&nbsp;Admin</h2>
+            <ul>
+                <li class="active"><a href="index.html">Servers</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="context.html">Context</a></li>
+                <li><a href="prompts.html">Prompts</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="logs.html">Logs</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>MCP Server Administration</h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-value">3</div>
+                    <div class="card-label">Total servers</div>
+                </div>
+                <div class="card">
+                    <div class="card-value">5</div>
+                    <div class="card-label">Total tools</div>
+                </div>
+                <div class="card action-card">
+                    <a href="#" class="add-link">+&nbsp;Add new server</a>
+                </div>
+            </div>
+            <div class="list-section">
+                <h2>Servers</h2>
+                <div class="server-list">
+                    <div class="server-card">
+                        <div class="server-info">
+                            <div class="server-name">server-1</div>
+                            <span class="status running">Running</span>
+                        </div>
+                        <div class="server-actions">
+                            <button class="btn stop-btn">Stop</button>
+                            <button class="btn help-btn">?</button>
+                        </div>
+                    </div>
+                    <div class="server-card">
+                        <div class="server-info">
+                            <div class="server-name">server-2</div>
+                            <span class="status stopped">Stopped</span>
+                        </div>
+                        <div class="server-actions">
+                            <button class="btn start-btn">Start</button>
+                            <button class="btn help-btn">?</button>
+                        </div>
+                    </div>
+                    <!-- Additional server cards can be added here -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
