@@ -1,0 +1,18 @@
+{
+  "advanced_prompt_management": {
+    "enabled": true,
+    "version": "1.0.0",
+    "components": {
+      "prompt_repository": true,
+      "version_control": true,
+      "evaluation_framework": true,
+      "analytics_engine": true,
+      "vector_store": true,
+      "collaboration": true,
+      "security_scanning": true
+    },
+    "dependencies_installed": false,
+    "setup_completed": false,
+    "last_updated": "2024-01-01T00:00:00"
+  }
+}

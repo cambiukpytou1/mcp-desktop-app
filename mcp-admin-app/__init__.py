@@ -1,0 +1,1 @@
+# MCP Admin Application Package

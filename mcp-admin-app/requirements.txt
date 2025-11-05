@@ -1,0 +1,23 @@
+# MCP Admin Application Requirements
+# 
+# Core dependencies - all included with Python standard library
+# No external dependencies required for basic functionality
+
+# Advanced Prompt Management Dependencies
+sentence-transformers>=2.2.2    # Semantic search and clustering
+chromadb>=0.4.0                 # Vector database for embeddings
+jinja2>=3.1.2                   # Advanced templating engine
+numpy>=1.24.0                   # Numerical computations
+pandas>=2.0.0                   # Data analysis and manipulation
+scikit-learn>=1.3.0             # Machine learning algorithms
+cryptography>=41.0.0            # Encryption and security
+requests>=2.31.0                # HTTP client for API calls
+aiohttp>=3.8.0                  # Async HTTP for concurrent API calls
+fastapi>=0.100.0                # REST API framework
+uvicorn>=0.23.0                 # ASGI server
+pydantic>=2.0.0                 # Data validation and serialization
+python-multipart>=0.0.6        # File upload support
+python-jose>=3.3.0              # JWT token handling
+passlib>=1.7.4                  # Password hashing
+schedule>=1.2.0                 # Task scheduling
+psutil>=5.9.0                   # System monitoring
